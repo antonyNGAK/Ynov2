@@ -1,0 +1,148 @@
+
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #26476a;
+  }
+  
+  .container {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1 {
+    text-align: center;
+    color: #eae7e7;
+    margin-bottom: 30px;
+  }
+  h2{
+    text-align: center;
+    color: #eae7e7;
+  }
+  h3{
+    text-align: center;
+  }
+  form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+  
+  form label, form input, form button {
+    margin: 0 10px;
+  }
+  
+  form input[type="text"] {
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+  }
+  
+  form button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  form button:hover {
+    background-color: #0056b3;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+  }
+  
+  #img {
+    font-size: 10px;
+  }
+  
+  p, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  p {
+    background-color: #f2f2f2;
+    font-weight: bold;
+  }
+  
+  tr:hover {
+    background-color: #f2f2f2;
+  }
+  .results-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+    margin-top: 20px;
+  }
+  .navBar{
+    text-align: center;
+    font-size: 50px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+  
+  .header {
+    display: flex; 
+    align-items: center; /* Aligne verticalement les éléments */
+    justify-content: center; /* Centrer horizontalement les éléments */
+    background-color: #f0f0f0; /* Couleur de fond */
+    padding: 20px; /* Espacement autour du contenu */
+  }
+  
+  .logo {
+    width: 100px; /* Taille de l'image du logo */
+    height: auto; /* Pour que la taille soit proportionnelle */
+    margin-right: 20px; /* Espacement entre le logo et le texte */
+  }
+  
+  .title {
+    font-size: 36px; /* Taille du texte */
+    color: #333; /* Couleur du texte */
+    margin: 0; /* Enlever la marge par défaut du titre */
+  }
+  .results-table th,
+  .results-table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .results-table th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+  }
+  tr{
+    color: #f7f4f4;
+  }
+  
+  .results-table tr:hover {
+    background-color: #878484;
+  }
+  
+  @media (prefers-color-scheme: light) {
+    :root {
+      color: #213547;
+      background-color: #ffffff;
+    }
+    a:hover {
+      color: #747bff;
+    }
+    button {
+      background-color: #f9f9f9;
+    }
+  }
+  

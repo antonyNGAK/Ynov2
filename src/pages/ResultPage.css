@@ -1,0 +1,64 @@
+/* Flexbox pour assurer la disposition en page entière */
+.result-page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Pour que la page occupe toute la hauteur de l'écran dispo */
+}
+
+.main-content {
+  flex: 1; 
+  padding: 20px;
+}
+
+.results-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th{
+  color: black;
+}
+
+label{
+  color: #f4f4f4;
+}
+
+.results-table th, .results-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+  text-decoration-color: #ddd;
+}
+
+.results-table th {
+  background-color: #f4f4f4;
+}
+
+.search-form {
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+  margin-left: 40px;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+}
+
+button[type="submit"] {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+

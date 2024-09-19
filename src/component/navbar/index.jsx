@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom'; // Utilisation de React Router pour la navigation
+import { Link } from 'react-router-dom'; //React Router pour la navigation
 import './NavBar.css';
 
 const NavBar = () => {

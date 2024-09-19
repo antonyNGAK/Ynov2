@@ -5,7 +5,7 @@ import NavBar from '../component/navbar';
 import Footer from '../component/footer/Footer'; 
 import './ResultPage.css'; 
 
-function Result() {
+function Result() { //Déclaration des états
   const [handicap, setHandicap] = useState(false);
   const [location, setLocation] = useState('');
   const [place, setPlace] = useState(''); 
@@ -13,13 +13,13 @@ function Result() {
   const [mapData, setMapData] = useState(null);
   const navigate = useNavigate();
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = async (e) => { //Bouton de déclenchement de l'appel API
     e.preventDefault();
     handleRequest();
   };
 
   async function handleRequest() {
-    let url = 'https://equipements.sports.gouv.fr/api/explore/v2.1/catalog/datasets/data-es/records?';
+    let url = 'https://equipements.sports.gouv.fr/api/explore/v2.1/catalog/datasets/data-es/records?'; // Récupération de l'url
     const params = {
       select: '*',
       limit: 15,
@@ -47,7 +47,7 @@ function Result() {
     }
 
     const queryString = new URLSearchParams(params).toString();
-    url += queryString;
+    url += queryString; // Récupération de l'url avec la nouvelle information demander
 
     try {
       const response = await fetch(url);
@@ -79,10 +79,9 @@ function Result() {
 
   return (
     <div className="result-page">
-      {/* NavBar en haut */}
       <NavBar />
 
-      {/* Contenu principal */}
+      {/* Contenu principal de la page */}
       <div className="main-content">
         <h1>Recherche d'installations sportives</h1>
         <form onSubmit={handleSubmit} className="search-form">

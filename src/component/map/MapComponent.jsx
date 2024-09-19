@@ -12,7 +12,7 @@ L.Icon.Default.mergeOptions({
   shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/images/marker-shadow.png',
 });
 
-const MapComponent = ({ latitude = 46.603354, longitude = 1.888334, city = 'France', zoomLevel = 6 }) => {
+const MapComponent = ({ latitude = 46.603354, longitude = 1.888334, city = 'France', zoomLevel = 6 }) => { 
   const mapRef = useRef();
 
   useEffect(() => {
@@ -36,7 +36,7 @@ const MapComponent = ({ latitude = 46.603354, longitude = 1.888334, city = 'Fran
         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
         attribution="&copy; <a href='https://www.openstreetmap.org/copyright'>OpenStreetMap</a> contributors"
       />
-      {/* Affichage du marqueur seulement si les coordonnées sont fournies */}
+      {/* Affichage du marqueur seulement si les coordonnées fournies sont correct */}
       {latitude && longitude && (
         <Marker position={[latitude, longitude]}>
           <Popup>{city}</Popup>

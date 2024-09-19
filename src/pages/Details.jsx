@@ -1,23 +1,20 @@
 import React from 'react';
 import { useLocation } from 'react-router-dom';
-import NavBar from '../component/navbar'; // Correction : composant NavBar avec majuscule
+import NavBar from '../component/navbar'; 
 import Footer from '../component/footer/Footer';
 import MapComponent from '../component/map/MapComponent';
-import './Details.css'; // Assurez-vous que ce fichier CSS existe et contient les styles appropriés
+import './Details.css'; 
 
 const Details = () => {
   const location = useLocation();
   const { installation } = location.state || {};
 
-  // Générer une URL de recherche Google pour l'installation
+  // URL de recherche Google pour l'installation
   const googleSearchUrl = `https://www.google.com/search?q=${installation?.inst_nom} ${installation?.inst_com_nom}`;
 
   return (
     <div>
-      {/* Affichage de la NavBar en haut de la page */}
       <NavBar />
-
-      {/* Contenu principal de la page */}
       <div className="details-container">
         <h1>Détails de l'installation</h1>
 

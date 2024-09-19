@@ -7,7 +7,7 @@ import './HomePage.css';
 function HomePage() {
   const navigate = useNavigate();
 
-  // Fonction de redirection vers la page Result lors de la recherche
+  // Fonction de routage vers la page de recherche(result)
   const handleNavigate = (filter) => {
     navigate('/result', { state: { filter } });
   };
@@ -26,7 +26,7 @@ function HomePage() {
         </section>
 
         <section className="features-section">
-          <div className="feature-block" onClick={() => handleNavigate('localisation')}>
+          <div className="feature-block" onClick={() => handleNavigate('localisation')}> {/* Bouton de click */}
             <h3>Localisation Précise</h3>
             <p>
               Trouvez des installations sportives proches de chez vous grâce à la géolocalisation.
